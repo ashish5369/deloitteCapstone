@@ -1,0 +1,30 @@
+backend
+API endpoints or creating user, 3 types of user are present ,admin , vendor and user 
+
+Functions:
+1. 
+    admin:
+    add,edit  or delete any event, whehter its added by vendor or the admin itself
+    see how many people are registered and their emails and other detail,
+    see what events are hosted by what vendor,
+
+    vendor:-
+    create,edit or delete eveents(only the events under the vendors name are visible or editable )
+    see how many people are registered and their emails and other detail,
+
+    user:-
+    can see all the events that are hosted
+    can register  to any event ,and can also withdraw from the event they have registered
+
+2.
+    Database:- all the types of users info is stored in separate tables in mongo db
+    there is page for registering where admin alredy creaeted and thier is no option to register admin,but vendors and users can resgiter, after filling theri information they can select an optin whether they are vendor or user and based on this option they;ll have different dasboards given
+
+    2.1 vendor/dashboard:- this page will show all the events added by thsi vendor, and  each event will have three buttons one to edit and other to delete the events and third button to see all the people who have registered for the event
+    at vendor/addEvent page theri will be form using which an event can be added and this event will be reflected on the dashboard page 
+    2.2 user/dashboard:- they can see all the event listed and besidde every evenmt their will be a button to regster and once they click resgiter they 'll be resiterd and they will be added to the event attendes, there proifle data that we used to login will be used for registering them to the vent and their emails will be visible to vendor and admin as registered for that specific event
+    and user/registered will show all the events that user have reegsterd and can delte or unresgiter the events which they have resgitered for
+    2.3 admin/dashboard:- can see all the events and separeated based on what vendor listed what event , they can add or edit or delted event under any vendor and see people resgitered for all the events
+
+
+
